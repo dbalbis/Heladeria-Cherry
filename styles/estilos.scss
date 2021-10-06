@@ -1,0 +1,169 @@
+/* PAGINA CONTACTO */
+
+div.container__contact{
+    h2{
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+
+div.container__contact--info{
+    p{
+        color: black;
+        margin-top: 20px;
+    }
+    span{
+        font-weight: bold;
+    }
+    p.container__contact--open{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/* FIN PAGINA CONTACTO */
+
+/* INICIO PAGINA HEALTHY */
+
+div.healthy__img{
+    width: 100%;
+    border-bottom: solid black;
+    border-width: 15px;
+    img{
+        height: 350px;
+    }
+}
+
+div.container__healthy--text{
+    h2 {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        
+    h3 { 
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+    
+}
+
+div.container__healthy--text{
+    p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+h3.healthy__text--h3{
+    text-align: center;
+}
+
+h2.healthy__text--h2{
+    text-align: center;
+}
+
+div.healthy__text--img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ 
+    img{
+        width: 1050px;
+        height: 412px;
+        border-radius: 16%;
+    }
+}
+
+div.container__healthy--text{
+    ol li{
+        list-style-type: none;
+        counter-increment: lista; /* Un nombre identificativo que te guste */
+        position: relative;
+        line-height: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
+        
+    
+        
+    }
+    ol li::before{
+        color:#fe4f8a;
+        font-weight: bold;
+        font-size: 35px;
+        content: counter(lista) "-"; /* Indica el separador para tu contenido */
+        left: -38px;
+        position: absolute;
+        text-align: right;
+        width: 35px;
+        padding-right: 25px;
+        padding-left: 25px;
+        line-height: 30px;
+
+    }
+}
+
+div.container__healthy--text{
+    ul{
+        list-style: none;
+        padding: 0px;
+        line-height: 30px;
+        padding-right: 25px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    ul li::before {
+        content: "\2022";
+        color:#fe4f8a;
+        display: inline-block; 
+        padding-right: 35px;
+        font-size: 55px;
+        line-height: 30px;
+        vertical-align: -11px;
+        width: 5px;
+            
+            
+    }
+}
+
+
+/* FIN PAGINA HEALTHY */
+
+/* Inicio pagina Postres  */
+
+h2.postres__h2--text{
+    text-align: center;
+}
+
+div.postres{
+    padding-left: 25px;
+    padding-right: 25px;
+    img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Fin pagina Postres */
+
+div.helados{
+    margin-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    img{
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* Inicio pagina Helados */
+
+
