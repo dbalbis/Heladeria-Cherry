@@ -1,4 +1,507 @@
-gi/* PAGINA CONTACTO */
+/* Estilos */
+
+@for $i from 1 to 6 {
+    h#{$i}{
+        font-size: 90px / $i;
+        font-family: 'Baloo Bhai 2', cursive;
+        color: black;
+
+    }
+    
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+
+body {
+    background-color: #86e0e1;
+
+}
+
+ol {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; 
+}
+
+ul{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Fin de estilos */
+
+/* Header y Menu */
+
+div.logo__menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #fe4f8a;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    img{
+    width: 70%;
+    height: 70%;
+
+    }
+    a:link{
+        text-decoration: none;
+
+    }
+
+}
+
+div.menu__text{
+    ul{
+    display: flex;
+    list-style: none;
+
+    }
+    ul li a {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-transform: uppercase;
+        color: white;
+        font-size: 25px;
+        padding: 11px;  
+    }
+
+    a{
+    text-decoration: none;
+    background-image: linear-gradient(black, black);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+    }
+
+    a:hover, a:focus{
+    background-size: 100% 2px;
+
+    }
+
+        
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(/images/icono.svg);
+
+}
+
+.navbar-light .navbar-toggler {
+    color: black;
+    border-color: black;
+}
+
+header {
+    border-bottom: solid black;
+    border-width: 15px;
+    background-color: #fe4f8a;
+}
+
+
+/* Fin Header y Menu */
+
+ /* Slider */
+
+ .slider {
+    border-bottom: 15px solid black;
+    width: 100%;
+}
+
+ /* Fin Slider */
+
+ /* Historia */
+ .history {
+    margin-top:25px ;
+}
+
+.history__container{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap:  3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+h2.history {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 38px;
+    
+}
+
+div.history__container--ph{
+    img{
+        width: 860px;
+        height: auto;
+        border-radius: 8%;
+        box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        
+
+    }
+    
+}
+
+@media only screen and (min-width: 901px) and  (max-width: 1200px)  {
+    div.history__container--ph img {
+        width: 1160px;
+        height: 742px;
+    }
+
+}
+
+div.history__container--text { 
+    background: linear-gradient(to right, #FE4F8A, rgb(255, 148, 114));
+    border-radius: 8%; 
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+@media only screen and (min-width: 483px) and (max-width: 1200px) {  
+    div.history__container--text {
+        margin-top: 25px;
+    }
+}
+
+div.history__container--text .history__parrafo {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    height: 50px;
+    color: black;
+}
+
+ /* Historia (index.html) */
+
+ /* Productos (index.html) */
+
+ .grid__content {
+    padding-left: 20px;
+    padding-right: auto;
+    margin-top: 25px;
+}
+
+div.content__product1{
+    img{
+        width: 425px;
+        height: auto;
+        margin-top: 25px;
+        border-radius: 16%;
+        box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        
+    }
+    h3{
+        text-align: center;
+        padding-left: 25px; 
+    }
+    p{
+        padding-left: 25px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        margin-top: 25px;
+
+    }
+}
+
+div.content__product2{
+    img{
+        width: 425px;
+        height: auto;
+        margin-top: 25px;
+        border-radius: 16%;
+        box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+
+    }
+    h3{
+        padding-left: 25px;
+        text-align: center;
+
+    }
+    p{
+        padding-left: 25px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        margin-top: 25px;
+
+    }
+}
+
+div.content__product3{
+    img{
+    width: 425px;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 16%;
+    box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 11px 5px 0px rgba(0,0,0,0.75);
+    }
+    h3{
+    padding-left: 25px;
+    text-align: center;
+
+    }
+    p{
+    padding-left: 25px;
+    font-size: 18px;
+    margin-top: 25px;
+    }
+    
+}
+
+/* Fin Productos */
+
+/* Mapa */
+
+div.map__container--background{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-top: solid black;
+    border-width: 15px;
+
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 550px;
+        opacity: 0.4;
+
+    }
+
+}
+
+div.map__container {
+    padding-bottom: 25px;
+    
+}
+
+h3.title__map {
+    font-size: 35px;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+iframe.google__map {
+    position: relative;
+    z-index: 2;
+
+}
+
+
+/* Fin de Mapa */
+
+/* Footer */
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 128px;
+    background-color: black;
+    border-top: solid #fe4f8a;
+    border-width: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -6px;
+    
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    img{
+        width: 25px;
+        height: 25px;
+    }
+
+    ul li a{
+        padding: 20px;
+
+    }
+
+}
+
+div.footer__copy--text{
+    margin-top: 8px;
+    h3{
+        font-size: 16px;
+        color: white;
+        padding-left: 20px;
+
+    }
+}
+
+@media (max-width: 768px) { 
+    div.footer__copy--text {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    div.footer__copy--text h3 {
+        font-size: 11px;
+    }
+}
+
+div.footer__copy--left {
+    padding-left: 60px;
+    h3{
+        font-size: 16px;
+        color: white;
+
+    }
+}
+
+@media (max-width: 576px) {
+    div.footer__copy--left h3{
+        font-size: 11px;
+    }
+}
+
+span.author {
+    color: #fe4f8a;
+}
+
+/* Fin de Footer */
+
+/* Boton de Whatsapp */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+
+    :hover{
+        text-decoration: none;
+	    color: #25d366;
+        background-color:#fff;
+
+    }
+
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* Fin de boton de Whatsapp */
+
+/* Formulario de Contacto */
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 20px;
+    display: inline-block;
+    font-weight: 500;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #fe4f8a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+  }
+  
+  /* Style the container */
+    .container__form {
+    border: black solid 8px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+/* Fin de formulario de Contacto */
+
+/* PAGINA CONTACTO */
 
 div.container__contact{
     h2{
@@ -35,6 +538,7 @@ div.healthy__img{
     border-width: 15px;
     img{
         height: 350px;
+        width: auto;
     }
 }
 
@@ -148,11 +652,13 @@ div.postres{
     padding-right: 25px;
     img{
         width: 400px;
-        height: 400px;
+        height: auto;
     }
 }
 
 /* Fin pagina Postres */
+
+/* Pagina Helados */
 
 div.helados{
     margin-top: 20px;
@@ -164,7 +670,7 @@ div.helados{
     }
 }
 
-/* Inicio pagina Helados */
+
 
 $colordetitulo: black;
 $aligntitulo: center;
@@ -182,7 +688,9 @@ div.helados{
     img{
         width: $imgancho;
         height: auto;
-
+    }
+    p{
+        text-align: left;
     }
 }
 
