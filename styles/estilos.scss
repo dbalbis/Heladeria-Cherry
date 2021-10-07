@@ -166,4 +166,33 @@ div.helados{
 
 /* Inicio pagina Helados */
 
+$colordetitulo: black;
+$aligntitulo: center;
+
+h2.helados__h2--text {
+    color: $colordetitulo;
+    text-align: $aligntitulo;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+$imgancho: 90px * 2; 
+
+div.helados{
+    img{
+        width: $imgancho;
+        height: auto;
+
+    }
+}
+
+$padding: 25px;
+
+main.id.container__helados{
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+/* Fin de pagina Helados */
+
 

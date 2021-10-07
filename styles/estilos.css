@@ -1,4 +1,4 @@
-/* PAGINA CONTACTO */
+gi
 div.container__contact h2 {
   color: black;
   text-align: center;
@@ -146,4 +146,22 @@ div.helados img {
 }
 
 /* Inicio pagina Helados */
+h2.helados__h2--text {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+div.helados img {
+  width: 180px;
+  height: auto;
+}
+
+main.id.container__helados {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Fin de pagina Helados */
 /*# sourceMappingURL=estilos.css.map */
